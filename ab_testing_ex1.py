@@ -9,8 +9,6 @@ df = pd.read_csv(url,index_col=False )
 print(df.head(5))
 
 
-df.to_excel(r'Q:\Data_science\ttest.xlsx',engine='xlsxwriter',index = False, header=True)
-
 
 clicks_A = df[df['advertisement_id'] == 'A']['action']
 clicks_B = df[df['advertisement_id'] == 'B']['action']
